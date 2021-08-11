@@ -26,7 +26,48 @@ export default function AnnualReport()
     cv:cvc
   };
 // const [formvalues,setformvalues]=useState(options);
-  
+  const mystyle = {
+        color: "green",
+        backgroundColor:"lightblue",
+        padding: "60px",
+        fontFamily: "Arial",
+        height: "5px",
+        //backgroundImage:' url("https://www.loginradius.com/blog/start-with-identity/static/3b4c33cef1861297f7da778dff9074a7/a3513/login-security.png")',
+        width: "50%"
+      };
+
+    const [country,setCountry] = useState();
+    const history = useHistory();
+
+    useEffect(()=>{
+
+        let authdata = JSON.parse(sessionStorage.getItem("auth")) || '';
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        console.log("check in session storage");
+        
+        const data = {};
+        const headers = { 
+            'Authorization': 'Bearer ' + authdata.token
+        };
+
+        
+
+    
+   
+    
 
   const handleClick = (e) =>
      {
